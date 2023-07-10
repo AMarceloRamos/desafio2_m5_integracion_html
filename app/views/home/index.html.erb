@@ -1,0 +1,14 @@
+  <!-- Thumbnail -->
+    <section id="thumbnails">
+      <% (1..12).each do |index| %>
+        <article>
+          <%= link_to(image_tag("thumbs/#{index.to_s.rjust(2, '0')}.jpg"), "fulls/#{index.to_s.rjust(2, '0')}.jpg", class: 'thumbnail', 'data-position': (index == 1 || index == 3 || index == 5) ? 'left center' : 'top center') %>
+          <h2><%= "Diam tempus accumsan" %></h2>
+          <p><%= "Lorem ipsum dolor sit amet, consectetur adipiscing elit." %></p>
+        </article>
+      <% end %>
+    </section>
+
+    	
+			
+  

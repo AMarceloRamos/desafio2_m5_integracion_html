@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Desafio2Integracionhtml</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Font awesome -->
+  <script src="https://kit.fontawesome.com/41b8753ddc.js" crossorigin="anonymous"></script>
+  <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+      <%= stylesheet_link_tag "application", "data-turbo-track" => "reload" %>
+      <%= javascript_importmap_tags %>
+      <%= javascript_include_tag 'main' %>
+      <%= javascript_include_tag 'application' %>
+      <%= javascript_include_tag 'jquery.min' %>
+      <%= javascript_include_tag 'browser.min' %>
+      <%= javascript_include_tag 'breakpoints.min' %>
+</head>
+
+
+<body class="is-preload-0 is-preload-1 is-preload-2">
+  <div id="main">
+
+    <%= render "shared/header" %>
+      <%= yield %>
+    <%= render "shared/footer" %>
+
+  </div>
+
+
+</body>
+
+</html>
